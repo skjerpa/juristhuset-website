@@ -1,5 +1,32 @@
 <header class="site-header" role="banner">
 
-    <strong><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></strong>
-    
+    <div class="container pt-3 pb-3">
+      <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="{{ .Site.BaseURL }}">
+          <img src="./images/logo.svg" height="80" alt="{{ .Site.Title }}">
+          J&G
+          Contabilidade
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav3">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="contabilidade.html">Contabilidade</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Condomínios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+          </ul>
+
+          <a class="btn btn-empty ml-md-3 btn-round" href="#">Fale conosco</a>
+        </div>
+      </nav>
+    </div>
 </header>

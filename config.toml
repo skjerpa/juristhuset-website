@@ -1,6 +1,6 @@
 baseURL = "/"
-languageCode = "en-gb"
-title = "{TITLE}"
+languageCode = "pt-br"
+title = "JG Contadores"
 
 disableKinds = ["RSS"]
 enableRobotsTXT = true
@@ -28,4 +28,3 @@ mediatype = "text/netlify"
 baseName = "_headers"
 isPlainText = true
 notAlternative = true
-
