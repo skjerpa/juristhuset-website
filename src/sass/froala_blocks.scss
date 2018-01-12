@@ -7,6 +7,10 @@
   background-color: $jg-blue !important;
 }
 
+.navbar-container {
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05);
+}
+
 .fdb-block {
   font-family: 'Roboto', sans-serif;
   font-size: $font-size;
