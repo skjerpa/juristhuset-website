@@ -1,32 +1,41 @@
-<header class="site-header" role="banner">
+<header class="site-header fixed-top" role="banner">
 
-    <div class="container pt-3 pb-3 navbar-container">
-      <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand" href="{{ .Site.BaseURL }}">
+  <div class="container pt-2 pb-2 navbar-container">
+    <nav class="navbar navbar-expand-md">
+      <a class="navbar-brand" href="{{ .Site.BaseURL }}">
           <img src="/images/logo.svg" height="80" alt="{{ .Site.Title }}">
           J&G
           Contabilidade
         </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav3">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="/contabilidade/">Contabilidade</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Condomínios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sobre</a>
-            </li>
-          </ul>
-
-          <a class="btn btn-empty ml-md-3 btn-round" href="#">Fale conosco</a>
-        </div>
-      </nav>
-    </div>
+      <div class="collapse navbar-collapse" id="navbarNav3">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/contabilidade/">Contabilidade</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Condomínios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </li>
+        </ul>
+        <a class="btn btn-empty ml-md-3 btn-round" href="#">Fale conosco</a>
+      </div>
+    </nav>
+  </div>
 </header>
