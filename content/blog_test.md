@@ -1,11 +1,13 @@
 ---
 type: blog
-menu: "main"
 title: Contratando com Segurança
-lead: A forma de contratação de Trabalhadores é o tema norteador às orientações que passamos aos nossos clientes, sejam aqueles interessados em empreender ou os que já praticam atividade geradora de postos de trabalho.
+lead: A forma de contratação de Trabalhadores é o tema norteador às orientações que
+  passamos aos nossos clientes, sejam aqueles interessados em empreender ou os que
+  já praticam atividade geradora de postos de trabalho.
+menu:
+  main: {}
+
 ---
-
-
 Em qualquer ramo de atividade o empreendedor deve sempre adotar as boas práticas nas relações de trabalho e inserir em suas planilhas os custos da contratação de acordo com as normas legais estabelecidas por nossa legislação Pátria, ou seja, respeitando os ditames da CLT e leis que a complementam, bem como observando às cláusulas constantes de Convenções e Acordos Coletivos de Trabalho.
 
 As regras de relação laboral exigem um delicado equilíbrio entre o seu não aviltamento e a não inviabilização do empreendimento. Por certo, sendo o empreendedor aquele que gera o emprego, deve ter o seu patrimônio preservado e sendo o colaborador aquele que produz, deveter seu salário equilibrado de tal forma a garantir a manutenção desta relação de equilíbrio. O equilíbrio consiste justamente em manter os atrativos para que o empreendedor continue empreendendo e manter os atrativos para que o colaborador se mantenha insentivado a permanecer no setor.
@@ -23,6 +25,8 @@ Mister se faz ressaltar que o entendimento pleno de uma Convenção Coletiva de 
 São as normas coletivas detrabalho que geralmente determinam a duração da jornada de trabalho, o divisor de horas a ser aplicado, o piso salarial da categoria, vantagens, gratificações, adicionais, prêmios e benefícios que quando aplicados corretamente contribuem para a fidelização do trabalhador na empresa, apurando a qualidade do serviço entregue ao cliente final.
 
 É importante manter em mente que as boas práticas nas relações de trabalho passam incondicionalmente pelas relações humanas. Uma contratação dentro dos ditames legais e uma execução do contrato dentro do mesmo diapasão garantem não apenas uma execução tranquila e eficaz do contrato de trabalho, mas também evita ao empregador eventuais surpresas no caso de interrupção deste contrato.
+
+![](/uploads/2018/02/04/coverpic.svg)
 
 Destaque-se que no ramo de atividades exercidas pelos associados à ABCVP os cuidados devem ser ainda maiores. Isso porque os trabalhadores de empresas de controle de pragas e vetores manuseiam produtos químicos quotidianamente e é justamente neste ponto que o associado ABCVP precisa ter cuidado adicional em suas relações trabalhistas.
 
