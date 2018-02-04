@@ -18,11 +18,9 @@
         <div class="col-12 col-sm-6 col-md-4 text-md-left">
           <h3><strong>Nossos serviços</strong></h3>
           <nav class="nav flex-column">
-            <a class="nav-link active" href="https://www.froala.com">Home</a>
-            <a class="nav-link" href="https://www.froala.com">Features</a>
-            <a class="nav-link" href="https://www.froala.com">Pricing</a>
-            <a class="nav-link" href="https://www.froala.com">Team</a>
-            <a class="nav-link" href="https://www.froala.com">Contact Us</a>
+          {{ range .Site.Menus.footer }}
+            <a class="nav-link" href="{{.URL}}">{{ .Name }}</a>
+            {{ end }}
           </nav>
         </div>
 

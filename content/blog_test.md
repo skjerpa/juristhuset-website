@@ -5,7 +5,6 @@ title: Contratando com Segurança
 lead: A forma de contratação de Trabalhadores é o tema norteador às orientações que passamos aos nossos clientes, sejam aqueles interessados em empreender ou os que já praticam atividade geradora de postos de trabalho.
 ---
 
-A forma de contratação de Trabalhadores é o tema norteador às orientações que passamos aos nossos clientes, sejam aqueles interessados em empreender ou os que já praticam atividade geradora de postos de trabalho.
 
 Em qualquer ramo de atividade o empreendedor deve sempre adotar as boas práticas nas relações de trabalho e inserir em suas planilhas os custos da contratação de acordo com as normas legais estabelecidas por nossa legislação Pátria, ou seja, respeitando os ditames da CLT e leis que a complementam, bem como observando às cláusulas constantes de Convenções e Acordos Coletivos de Trabalho.
 
