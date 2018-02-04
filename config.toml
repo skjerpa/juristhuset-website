@@ -28,3 +28,10 @@ mediatype = "text/netlify"
 baseName = "_headers"
 isPlainText = true
 notAlternative = true
+
+[[menu.main]]
+    name = "Fale conosco"
+    class = "btn btn-empty ml-md-3 btn-round"
+    weight = -110
+    identifier = "about"
+    url = "/about/"

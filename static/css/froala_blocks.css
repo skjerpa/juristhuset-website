@@ -93,7 +93,7 @@
   background-position: center;
   overflow: hidden; }
   .fdb-block.fdb-viewport {
-    min-height: calc(100% - 2 * 100px); }
+    min-height: calc(100vh - 2 * 100px); }
     .fdb-block.fdb-viewport .container {
       min-height: calc(100% - 2 * 100px); }
   .fdb-block.fdb-image-bg {
@@ -111,7 +111,7 @@
   .fdb-block .fdb-touch {
     border-top: solid 5px #528bff; }
   .fdb-block h1, .fdb-block .text-h1 {
-    font-size: 3.75rem;
+    font-size: 3rem;
     margin-bottom: .5em;
     margin-top: .3em;
     font-weight: 400; }
@@ -140,6 +140,8 @@
     margin-bottom: .5em;
     margin-top: .3em;
     font-weight: 400; }
+  .fdb-block h1 {
+    font-weight: 700; }
   .fdb-block .font-weight-light {
     font-weight: 300; }
   .fdb-block img {

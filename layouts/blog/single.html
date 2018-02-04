@@ -1,0 +1,25 @@
+{{ define "main" }}
+<article>
+<section class="fdb-block jg-blue">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-12">
+        <h1>{{.Title}}</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="fdb-block">
+  <div class="container">
+  <div class="row justify-content-center">
+  <div class="col-8">
+  <p class="lead">
+   {{.Params.lead}}
+  </p>
+    {{ .Content }}
+    </div>
+    </div>
+  </div>
+</section>
+</article>
+{{ end }}

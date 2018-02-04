@@ -1,8 +1,9 @@
 ---
-type: services
+type: contact
 menu: "main"
-url: /contabilidade/departamento-fiscal
-title: Departamento Fiscal
+url: /contact/
+title: Fale Conosco
+lead: "here at JG blalalalallalala"
 serviceDescription: O Departamento Pessoal da A JG Soluções Contábeis é composto por experientes profissionais do setor. Além disso, a equipe conta com constante orientação de advogados trabalhistas que atuam na área.
 subServices:
   - subServiceImage: salary.svg
