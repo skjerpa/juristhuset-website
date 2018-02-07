@@ -1,6 +1,5 @@
 ---
 type: contact
-menu: "main"
 url: /contact/
 title: Fale Conosco
 lead: "here at JG blalalalallalala"

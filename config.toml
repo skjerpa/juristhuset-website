@@ -30,8 +30,8 @@ isPlainText = true
 notAlternative = true
 
 [[menu.main]]
-    name = "Fale conosco"
-    class = "btn btn-empty ml-md-3 btn-round"
-    weight = -110
-    identifier = "about"
-    url = "/about/"
+    name = "Fale Conosco"
+    identifier = "fale-conosco"
+    url = "/contact/"
+    pre = "btn btn-empty ml-md-3 btn-round"
+    weight = 0
