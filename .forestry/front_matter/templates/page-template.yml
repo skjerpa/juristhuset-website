@@ -1,0 +1,32 @@
+---
+hide_body: false
+fields:
+- type: field_group
+  name: advanced
+  label: Advanced
+  description: Advanced settings for this page
+  fields:
+  - type: select
+    name: menu
+    config:
+      source:
+        type: simple
+    label: Menu
+    description: Select which menus this page should appear in
+- type: field_group
+  name: seo
+  label: SEO
+  description: SEO settings goes here
+  fields:
+  - type: textarea
+    name: meta_description
+    label: Meta Description
+  - type: text
+    name: seo_title
+    label: SEO Title
+- type: textarea
+  name: content
+  label: Content
+- type: text
+  name: title
+  label: Title
