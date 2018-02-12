@@ -1,3 +1,41 @@
 // ...
 @import '~bootstrap/scss/bootstrap';
 @import 'froala_blocks';
+
+.card-svg {
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.card {
+  @include froala-box-shadow(1);
+}
+
+.service-image {
+  max-height: 350px;
+  object-fit: contain;
+}
+
+.grey-section {
+  background-color: #f5f5f5;
+  border-top: 1px solid #ebebeb;
+}
+// number of cards per line for each breakpoint
+$cards-per-line: (
+  xs: 1,
+  sm: 2,
+  md: 3,
+  lg: 3,
+  xl: 3
+);
+
+.card-deck {
+  display: grid;
+}
+@each $name, $breakpoint in $grid-breakpoints {
+  @media (min-width: $breakpoint) {
+    .card-deck {
+      grid-template-columns: repeat(map-get($cards-per-line, $name), 1fr);
+    }
+  }
+}

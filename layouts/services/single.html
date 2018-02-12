@@ -4,7 +4,7 @@
   <div class="container pb-5">
     <div class="row align-items-center pb-xl-5">
       <div class="col-12 col-sm-6 col-md-6 m-sm-auto mr-md-0 ml-md-auto pt-4 pt-md-0">
-        <img alt="image" class="img-fluid" src="/images/employees.svg">
+        <img alt="image" class="img-fluid" src="/images/{{ .Params.serviceImage }}">
       </div>
       <div class="col-12 col-md-6 col-xl-6">
         <h1>{{.Title}}</h1>
@@ -15,41 +15,47 @@
 
   <div class="container pt-5">
     <div class="row justify-content-center">
-      <div class="col-12 text-center">
-        <h2>Nossos serviços</h2>
+      <div class="col-12 text-center my-5">
+        <h2 class="text-h2">Nossos serviços</h2>
       </div>
     </div>
 
     <div class="card-deck">
       {{ range .Params.subServices }}
-      <div class="card froala-box-shadow">
-        <img alt="{{ .subServiceHeading }}" class="card-img-top" src="/images/{{ .subServiceImage }}">
-        <div class="card-body">
-        <h3 class="card-title">{{.subServiceHeading}}</h3>
-        <p>{{.subServiceDescription}}</p>
+      <div class="card mt-5">
+        <img alt="{{ .subServiceHeading }}" class="card-svg mt-5" src="/images/{{ .subServiceImage }}">
+        <div class="card-body mt-3">
+          <h3 class="card-title">{{.subServiceHeading}}</h3>
+          <p>{{.subServiceDescription}}</p>
+
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"> 13º Salário</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
         </div>
-        </div>
+      </div>
       {{end}}
     </div>
   </div>
 </section>
 
 <section class="fdb-block jg-blue">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-10 col-lg-8 text-center">
-          <div class="fdb-box">
-            <h2 class="text-h1">More questions?</h2>
-            <p class="text-h3">
-              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts
-            </p>
-            <p class="mt-4">
-              <a class="btn" href="/contact">Fale Conosco</a>
-            </p>
-          </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8 text-center">
+        <div class="fdb-box">
+          <h2 class="text-h1">More questions?</h2>
+          <p class="text-h3">
+            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts
+          </p>
+          <p class="mt-4">
+            <a class="btn" href="/contact">Fale Conosco</a>
+          </p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 {{ end }}

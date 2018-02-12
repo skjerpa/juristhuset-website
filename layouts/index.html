@@ -1,190 +1,70 @@
 {{ define "main" }}
 <section class="fdb-block pb-5 pt-5 fdb-viewport justify-content-center d-flex flex-column">
-    <div class="container">
-      <div class="row align-items-center text-left">
-        <div class="col-12 col-md-6 col-lg-6">
-          <h1>Soluções Contábeis</h1>
-          <p class="text-h3">A missão da JG Soluções Contábeis é ser um aliado do crescimento de nossos Clientes. Para isso, nossos colaboradores se esforçam em tornar comunicação com os clientes fácil e simples. Acreditamos que, para tornar a nossa missão realidade, é necessário investir na excelência dos nossos serviços.</p>
-          <p class="mt-4"><a href="#" class="btn col-6 btn-round btn-shadow">Conheça-nos</a></p>
-        </div>
+  <div class="container">
+    <div class="row align-items-center text-left">
+      <div class="col-12 col-md-6 col-lg-6">
+        <h1>Soluções Contábeis</h1>
+        <p class="text-h3">A missão da JG Soluções Contábeis é ser um aliado do crescimento de nossos Clientes. Para isso, nossos colaboradores se esforçam em tornar comunicação com os clientes fácil e simples. Acreditamos que, para tornar a nossa missão realidade, é necessário
+          investir na excelência dos nossos serviços.</p>
+        <p class="mt-4"><a href="#services" class="btn col-6 btn-round btn-shadow">Conheça-nos</a></p>
+      </div>
 
-        <div class="col-12 col-sm-6 col-md-6 col-lg-6 m-auto pt-5">
-          <img alt="image" class="img-fluid" src="./images/investment.svg">
-        </div>
+      <div class="col-12 col-sm-6 col-md-6 col-lg-6 m-auto pt-5">
+        <img alt="image" class="img-fluid" src="./images/investment.svg">
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="fdb-block">
-    <div class="container">
-      <div class="row align-items-center pb-xl-5">
-        <div class="col-12 col-sm-6 col-md-6 m-sm-auto mr-md-0 ml-md-auto pt-4 pt-md-0">
-          <img alt="image" class="img-fluid" src="./images/employees.svg">
-        </div>
-        <div class="col-12 col-md-6 col-xl-6">
-          <h2>Departamento Pessoal</h2>
-          <p class="text-h3">A JG Soluções Contábeis possui uma equipe de Departamento Pessoal composta por experientes profissionais do setor. Além disso, contamos com orientação de advogados trabalhistas com experiência no ramo.</p>
-          <p class="mt-4"><a href="#" class="btn col-6">Conheça-nos</a></p>
-        </div>
-      </div>
 
-      {{/* <div class="row pt-5">
-        <div class="col-12 col-sm-6 col-md-3">
-          <h3><strong>Admissão</strong></h3>
-          <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large ocean.</p>
-        </div>
 
-        <div class="col-12 col-sm-6 col-md-3 pt-3 pt-sm-0">
-          <h3><strong>Férias</strong></h3>
-          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-3 pt-3 pt-md-0">
-          <h3><strong>13º Salário</strong></h3>
-          <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-3 pt-3 pt-md-0">
-          <h3><strong>Demissão</strong></h3>
-          <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>
-        </div>
-      </div> */}}
+<section class="fdb-block grey-section" id="services">
+<div class="container">
+{{ range first 4 (where .Pages "Type" "services") }}
+    <div class="row align-items-center my-5">
+    <div class="col-12 col-sm-6 col-md-6 m-sm-auto mr-md-0 ml-md-auto pt-4 pt-md-0">
+      <img alt="image" class="img-fluid service-image" src="./images/{{.Params.serviceImage}}">
     </div>
-  </section>
+    <div class="col-12 col-md-6 col-xl-6">
+        <h2>{{ .Title }}</h2>
+      <p class="text-h3">A JG Soluções Contábeis possui uma equipe de Departamento Pessoal composta por experientes profissionais do setor. Além disso, contamos com orientação de advogados trabalhistas com experiência no ramo.</p>
+      <p class="mt-4"><a href="{{ .Permalink }}" class="btn col-6">Sabia mais</a></p>
+    </div>
+    </div>
+{{ end }}
+</div>
+</section>
 
-  <section class="fdb-block">
-    <div class="container">
-      <div class="row align-items-center pb-xl-5">
-        <div class="col-12 col-sm-6 col-md-6 m-sm-auto mr-md-0 ml-md-auto pt-4 pt-md-0">
-          <img alt="image" class="img-fluid" src="./images/employees.svg">
-        </div>
-        <div class="col-12 col-md-6 col-xl-6 order-md-first">
-          <h2>Departamento Contábil</h2>
-          <p class="text-h3">O Departamento Contábil da JG Soluções Contábeis atende prontamente a todas as demandas contábeis. Nossa equipe assessora, supervisiona, avalia, controla e orienta as ações de nossos Clientes em questões financeiras, orçamentarias e patrimoniais.</p>
-        </div>
-      </div>
 
-      <div class="row pt-5">
-        <div class="col-12 col-sm-6 col-md-3">
-          <h3><strong>Admissão</strong></h3>
-          <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large ocean.</p>
-        </div>
+<section class="fdb-block">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center">
+        <h2 class="text-h1">Condomínios</h2>
 
-        <div class="col-12 col-sm-6 col-md-3 pt-3 pt-sm-0">
-          <h3><strong>Férias</strong></h3>
-          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-3 pt-3 pt-md-0">
-          <h3><strong>13º Salário</strong></h3>
-          <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-3 pt-3 pt-md-0">
-          <h3><strong>Demissão</strong></h3>
-          <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>
-        </div>
+        <img alt="image" class="img-fluid mt-5" src="./images/condominio.svg">
       </div>
     </div>
-  </section>
 
-  <section class="fdb-block">
-    <div class="container">
-      <div class="row align-items-center pb-xl-5">
-        <div class="col-12 col-sm-6 col-md-6 m-sm-auto mr-md-0 ml-md-auto pt-4 pt-md-0">
-          <img alt="image" class="img-fluid" src="./images/employees.svg">
-        </div>
-        <div class="col-12 col-md-6 col-xl-6">
-          <h2>Departamento Fiscal</h2>
-          <p class="text-h3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-        </div>
+    <div class="row text-left pt-5">
+      <div class="col-12 col-md-6">
+        <h3><strong>Feature One</strong></h3>
+
+        <p>Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with
+          the necessary regelialia. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
+
+        <p><a href="#">Learn More &gt;</a></p>
       </div>
+      <div class="col-12 col-md-6 pt-4 pt-md-0">
+        <h3><strong>Feature Two</strong></h3>
 
-      <div class="row pt-5">
-        <div class="col-12 col-sm-6 col-md-3">
-          <h3><strong>Admissão</strong></h3>
-          <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large ocean.</p>
-        </div>
+        <p> It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life. The Big Oxmox advised her not to do so, because there
+          were thousands of bad Commas, wild Question Marks and devious Semikoli. On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from
+          its origin.</p>
 
-        <div class="col-12 col-sm-6 col-md-3 pt-3 pt-sm-0">
-          <h3><strong>Férias</strong></h3>
-          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-3 pt-3 pt-md-0">
-          <h3><strong>13º Salário</strong></h3>
-          <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-3 pt-3 pt-md-0">
-          <h3><strong>Demissão</strong></h3>
-          <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>
-        </div>
+        <p><a href="#">Learn More &gt;</a></p>
       </div>
     </div>
-  </section>
-  <section class="fdb-block">
-    <div class="container">
-      <div class="row align-items-center pb-xl-5">
-        <div class="col-12 col-sm-6 col-md-6 m-sm-auto mr-md-0 ml-md-auto pt-4 pt-md-0">
-          <img alt="image" class="img-fluid" src="./images/charity.svg">
-        </div>
-        <div class="col-12 col-md-6 col-xl-6">
-          <h2>Terceiro Setor</h2>
-          <p class="text-h3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-        </div>
-      </div>
-
-      <div class="row pt-5">
-        <div class="col-12 col-sm-6 col-md-3">
-          <h3><strong>Admissão</strong></h3>
-          <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large ocean.</p>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-3 pt-3 pt-sm-0">
-          <h3><strong>Férias</strong></h3>
-          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-3 pt-3 pt-md-0">
-          <h3><strong>13º Salário</strong></h3>
-          <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-3 pt-3 pt-md-0">
-          <h3><strong>Demissão</strong></h3>
-          <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="fdb-block">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 text-center">
-          <h2 class="text-h1">Condomínios</h2>
-
-          <img alt="image" class="img-fluid mt-5" src="./images/condominio.svg">
-        </div>
-      </div>
-
-      <div class="row text-left pt-5">
-        <div class="col-12 col-md-6">
-          <h3><strong>Feature One</strong></h3>
-
-          <p>Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
-
-          <p><a href="#">Learn More &gt;</a></p>
-        </div>
-        <div class="col-12 col-md-6 pt-4 pt-md-0">
-          <h3><strong>Feature Two</strong></h3>
-
-          <p> It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli. On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin.</p>
-
-          <p><a href="#">Learn More &gt;</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
-  {{ end }}
+  </div>
+</section>
+{{ end }}
