@@ -1,0 +1,18 @@
+{{ define "main" }}
+<section class="fdb-block" id="services">
+<div class="container">
+{{ range first 4 (where .Pages "Type" "services") }}
+    <div class="row align-items-center my-5">
+    <div class="col-12 col-sm-6 col-md-6 m-sm-auto mr-md-0 ml-md-auto pt-4 pt-md-0">
+      <img alt="image" class="img-fluid service-image" src="./images/{{.Params.serviceImage}}">
+    </div>
+    <div class="col-12 col-md-6 col-xl-6">
+        <h2>{{ .Title }}</h2>
+      <p class="text-h3">{{ .Params.serviceDescription }}</p>
+      <p class="mt-4"><a href="{{ .Permalink }}" class="btn col-6">Sabia mais</a></p>
+    </div>
+    </div>
+{{ end }}
+</div>
+</section>
+{{ end }}

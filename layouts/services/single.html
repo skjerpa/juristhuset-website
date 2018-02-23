@@ -28,6 +28,10 @@
           <h3 class="card-title">{{.subServiceHeading}}</h3>
           <p>{{.subServiceDescription}}</p>
 
+            {{ range .Params.subServiceDetails }}
+            {{.}}
+            {{end}}
+
           <ul class="list-group list-group-flush">
             <li class="list-group-item"> 13º Salário</li>
             <li class="list-group-item">Dapibus ac facilisis in</li>

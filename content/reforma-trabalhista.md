@@ -6,8 +6,6 @@ lead: >-
   A forma de contratação de Trabalhadores é o tema norteador às orientações que
   passamos aos nossos clientes, sejam aqueles interessados em empreender ou os
   que já praticam atividade geradora de postos de trabalho.
-menu:
-  main: {}
 ---
 
 O presidente Michel Temer sancionou na quinta-feira, 13 de julho, na integra reforma trabalhista que havia sido aprovada no senado no dia 11 do mesmo mês. Em cerimônia no Palácio do Planalto o presidente disse o seguinte:

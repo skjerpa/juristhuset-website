@@ -18,6 +18,16 @@ const onError = (err) => {
 // --
 
 gulp.task('server', ['build'], () => {
+    gulp.start('init-watch')
+    $.watch(['archetypes/**/*', 'data/**/*', 'content/**/*', 'layouts/**/*', 'static/**/*', 'config.toml'], () => gulp.start('hugo'))
+});
+
+gulp.task('server:with-drafts', ['build-preview'], () => {
+    gulp.start('init-watch')
+    $.watch(['archetypes/**/*', 'data/**/*', 'content/**/*', 'layouts/**/*', 'static/**/*', 'config.toml'], () => gulp.start('hugo-preview'))
+});
+
+gulp.task('init-watch', () => {
     browserSync.init({
         server: {
             baseDir: 'public'
@@ -27,26 +37,37 @@ gulp.task('server', ['build'], () => {
     $.watch('src/sass/**/*.scss', () => gulp.start('sass'))
     $.watch('src/js/**/*.js', () => gulp.start('js-watch'))
     $.watch('src/images/**/*', () => gulp.start('images'))
-    $.watch(['archetypes/**/*', 'data/**/*', 'content/**/*', 'layouts/**/*', 'static/**/*', 'config.toml'], () => gulp.start('hugo'))
-});
+})
 
 gulp.task('build', () => {
-    runSequence(['sass', 'js', 'fonts', 'images'], 'hugo')
+    runSequence(['sass', 'js', 'fonts', 'images', 'pub-delete'], 'hugo')
 })
 
 gulp.task('build-preview', () => {
-    runSequence(['sass', 'js', 'fonts', 'images'], 'hugo-preview')
+    runSequence(['sass', 'js', 'fonts', 'images', 'pub-delete'], 'hugo-preview')
 })
 
+
+
 gulp.task('hugo', (cb) => {
-    return spawn('hugo', { stdio: 'inherit' }).on('close', (code) => {
+    let baseUrl = process.env.NODE_ENV === 'production' ? process.env.URL : process.env.DEPLOY_PRIME_URL;
+    let args = baseUrl ? ['-b', baseUrl] : [];
+
+    return spawn('hugo', args, { stdio: 'inherit' }).on('close', (code) => {
         browserSync.reload()
         cb()
     })
 })
 
+
+
 gulp.task('hugo-preview', (cb) => {
-    return spawn('hugo', ['--buildDrafts', '--buildFuture'], { stdio: 'inherit' }).on('close', (code) => {
+    let args = ['--buildDrafts', '--buildFuture'];
+    if (process.env.DEPLOY_PRIME_URL) {
+        args.push('-b')
+        args.push(process.env.DEPLOY_PRIME_URL)
+    }
+    return spawn('hugo', args, { stdio: 'inherit' }).on('close', (code) => {
         browserSync.reload()
         cb()
     })
@@ -94,7 +115,7 @@ gulp.task('fonts', () => {
 });
 
 gulp.task('images', () => {
-    return gulp.src('src/images/**/*.{png,jpg,jpeg,gif,svg,webp}')
+    return gulp.src('src/images/**/*.{png,jpg,jpeg,gif,svg,webp,ico}')
         .pipe($.newer('static/images'))
         .pipe($.print())
         .pipe($.imagemin())
@@ -103,4 +124,13 @@ gulp.task('images', () => {
 
 gulp.task('cms-delete', () => {
     return del(['static/admin'], { dot: true })
+})
+
+gulp.task('pub-delete', () => {
+    return del(['public/**', '!public'], {
+      // dryRun: true,
+      dot: true
+    }).then(paths => {
+      console.log('Files and folders deleted:\n', paths.join('\n'), '\nTotal Files Deleted: ' + paths.length + '\n');
+    })
 })
