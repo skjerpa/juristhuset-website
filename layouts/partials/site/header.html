@@ -1,7 +1,7 @@
 <header class="site-header {{ if .IsHome }} site-header-home {{end}}" role="banner">
 
   <div class="container pt-2 pb-2 navbar-container">
-    <nav class="navbar navbar-expand-md">
+    <nav class="navbar navbar-expand-md" data-toggle="sticky-onscroll">
       <a class="navbar-brand" href="{{ .Site.BaseURL }}">
           <img src="/images/logo.svg " height="100" alt="{{ .Site.Title }}">
         </a>

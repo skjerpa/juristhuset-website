@@ -13,6 +13,7 @@
         {{ end }}
 
         {{ block "site/styles" . }}{{ partial "site/styles.html" . }}{{ end }}
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
     </head>
     <body class="home {{ if .IsHome }} body-home {{end}}">
@@ -29,5 +30,17 @@
 
         {{ block "site/scripts" . }}{{ partial "site/scripts.html" . }}{{ end }}
 
+
+        <script>
+          if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+              if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                  document.location.href = "/admin/";
+                });
+              }
+            });
+          }
+        </script>
     </body>
 </html>
