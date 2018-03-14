@@ -4,6 +4,7 @@
   -webkit-box-sizing: $sizing;
 }
 
+
 @mixin border-radius($radius) {
   border-radius: $radius;
   -moz-border-radius: $radius;
@@ -68,3 +69,24 @@
 
   @include box-shadow($shadow);
 }
+
+
+// // number of cards per line for each breakpoint
+// $cards-per-line: (
+//   xs: 1,
+//   sm: 2,
+//   md: 3,
+//   lg: 3,
+//   xl: 3
+// );
+//
+// .card-deck {
+//   display: grid;
+// }
+// @each $name, $breakpoint in $grid-breakpoints {
+//   @media (min-width: $breakpoint) {
+//     .card-deck {
+//       grid-template-columns: repeat(map-get($cards-per-line, $name), 1fr);
+//     }
+//   }
+// }

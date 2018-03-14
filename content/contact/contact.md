@@ -1,6 +1,6 @@
 ---
 type: contact
-url: /contact/
+url: /kontakt/
 title: Fale Conosco
 lead: "here at JG blalalalallalala"
 serviceDescription: O Departamento Pessoal da A JG Soluções Contábeis é composto por experientes profissionais do setor. Além disso, a equipe conta com constante orientação de advogados trabalhistas que atuam na área.

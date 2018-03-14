@@ -1,6 +1,6 @@
 baseURL = "/"
-languageCode = "pt-br"
-title = "JG Contadores"
+languageCode = "nb-NO"
+title = "Advokatifrmaet Juristhuset"
 
 disableKinds = ["RSS"]
 enableRobotsTXT = true
@@ -30,8 +30,17 @@ isPlainText = true
 notAlternative = true
 
 [[menu.main]]
-    name = "Fale Conosco"
-    identifier = "fale-conosco"
-    url = "/contact/"
-    pre = "btn btn-empty ml-md-3 btn-round"
-    weight = 0
+    name = "Spisskompetanse"
+    identifier = "tjenster"
+    url = "/tjenester/"
+    weight = -1
+
+    [[menu.main]]
+        name = "Ta Kontakt"
+        identifier = "kontakt"
+        url = "/kontakt/"
+        pre = "btn ml-md-3 btn-round"
+
+[params]
+  FooterText = "Advokatfirmaet Juristhuset AS - Org. Nr. 918 529 349"
+  author = "Nikola Tesla"

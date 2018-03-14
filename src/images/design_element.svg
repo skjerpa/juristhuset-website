@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="29px" viewBox="0 0 25 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>design_element</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1.351,7.581 C3.533,8.804 6.357,7.698 8.319,9.673 C13.346,14.73 6.884,22.63 8.237,28.729 C9.613,34.93 14.481,35.695 18.264,34.548 C21.319,33.622 23.655,30.792 24.88,27.32 C27.165,20.836 28.781,12.95 26.003,6.284 C23.648,0.634 18.954,-0.104 14.249,0.548 C12.427,0.802 10.558,1.658 8.857,2.491 C7.254,3.276 5.274,3.256 3.592,3.72 C2.654,3.977 -0.801,4.362 0.171,6.342 C0.453,6.917 0.866,7.308 1.351,7.581 Z" id="path-1"></path>
+        <linearGradient x1="0.0015316767%" y1="40.2576306%" x2="108.098569%" y2="40.2576306%" id="linearGradient-3">
+            <stop stop-color="#F4898E" offset="0%"></stop>
+            <stop stop-color="#FCB975" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="design_element" transform="translate(0.000000, -6.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Shape"></g>
+            <rect id="Rectangle-path" fill="url(#linearGradient-3)" fill-rule="nonzero" mask="url(#mask-2)" x="0" y="6" width="25.413" height="28.995"></rect>
+        </g>
+    </g>
+</svg>

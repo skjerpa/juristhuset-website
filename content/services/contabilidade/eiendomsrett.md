@@ -1,10 +1,13 @@
 ---
 type: services
-menu: ['main', 'footer']
-url: /terceiro-setor/
-title: Terceiro Setor
-serviceDescription: O Terceiro Setor é composto por todas as iniciativas privadas de utilidade pública com origem na sociedade civil. A JG Soluções Contábeis entende que o as ONGs passaram a tomar uma posição de destaque no cenário brasileiro. Por conta disso, nos especializamos no ramo.
-serviceImage: charity.svg
+menu:
+  main:
+    parent: 'tjenster'
+  footer:
+url: /contabilidade/departamento-pessoal
+title: Eiendomsrett
+serviceDescription: O Departamento Pessoal da A JG Soluções Contábeis é composto por experientes profissionais do setor. Além disso, a equipe conta com constante orientação de advogados trabalhistas que atuam na área.
+serviceImage: eiendom.svg
 subServices:
   - subServiceImage: salary.svg
     subServiceHeading: Folha de pagamento

@@ -7,10 +7,6 @@
   background-color: $jg-blue !important;
 }
 
-.site-header {
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05);
-}
-
 .fdb-block {
   font-family: 'Roboto', sans-serif;
   font-size: $font-size;
@@ -32,6 +28,11 @@
     }
   }
 
+  &.fdb-viewport-full {
+    min-height: 100vh;
+
+  }
+
   &.fdb-image-bg {
     color: mix($black, $white, 5%);
   }
@@ -41,7 +42,7 @@
     color: $font-color;
     padding: 60px 40px;
     @include border-radius(4px);
-    @include froala-box-shadow(1);
+    box-shadow: $custom-box-shadow;
     overflow: hidden;
   }
 
@@ -59,8 +60,9 @@
     }
   }
 
-  h1 {
-    font-weight: 700;
+  h1, h2 {
+    font-weight: 800;
+    font-family: $font-stack;
   }
 
   .font-weight-light {
@@ -166,11 +168,11 @@ footer {
 }
 
 header {
-  background-color: $white;
+  // background-color: $white;
 
   .navbar-nav {
     a.nav-link {
-      color: #777;
+      // color: #FFF;
 
       &:hover {
         color: $primary-color;

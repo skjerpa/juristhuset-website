@@ -1,7 +1,7 @@
 ---
 type: blog
 url: /reforma-trabalhista/
-title: A Reforma Trabalhista
+title: Viktige ting å tenke på
 lead: >-
   A forma de contratação de Trabalhadores é o tema norteador às orientações que
   passamos aos nossos clientes, sejam aqueles interessados em empreender ou os

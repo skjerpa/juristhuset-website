@@ -1,55 +1,40 @@
-<header class="site-header" role="banner">
+<header class="site-header {{ if .IsHome }} site-header-home {{end}}" role="banner">
 
   <div class="container pt-2 pb-2 navbar-container">
     <nav class="navbar navbar-expand-md">
       <a class="navbar-brand" href="{{ .Site.BaseURL }}">
-          <img src="/images/logo.png" height="60" alt="{{ .Site.Title }}">
+          <img src="/images/logo.svg " height="100" alt="{{ .Site.Title }}">
         </a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="true" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-
-
 
         <div class="collapse navbar-collapse" id="navbarNav3">
         <ul class="navbar-nav ml-auto">
           {{ $currentPage := . }}
           {{ range .Site.Menus.main }}
-            {{/* {{ if .HasChildren }}
-              <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
-                <a href="#">
-                  {{ .Pre }}
-                  <span>{{ .Name }}</span>
-                </a>
-                <ul class="sub-menu">
+            {{ if .HasChildren }}
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="about-us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{ .Name }}
+                <a>
+                <div class="dropdown-menu" aria-labelledby="about-us">
                   {{ range .Children }}
-                    <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
-                      <a href="{{ .URL }}">{{ .Name }}</a>
+                  <a class="dropdown-item {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">
+                  {{ .Name }}
+                  </a>
                   {{ end }}
-                </ul>
-            {{else}} */}}
+                  </div>
+                  </li>
+            {{else}}
               <li class="nav-item">
                 <a class="nav-link {{ .Pre }}" href="{{.URL}}">
                   {{ .Name }}
                 </a>
-            {{/* {{end}} */}}
+                </li>
+            {{end}}
           {{end}}
-        </ul>
-
-
-        <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
-          </div>
-        </li>
         </ul>
       </div>
     </nav>

@@ -1,5 +1,4 @@
 ---
-title: "Contabilidade"
-menu: "main"
-url: "/contabilidade/"
+title: "Spisskompetanse"
+url: "/tjenester/"
 ---

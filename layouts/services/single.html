@@ -1,18 +1,17 @@
 {{ define "main" }}
 
-<section class="fdb-block mt-5">
+<section class="fdb-block service-hero">
   <div class="container pb-5">
-    <div class="row align-items-center pb-xl-5">
-      <div class="col-12 col-sm-6 col-md-6 m-sm-auto mr-md-0 ml-md-auto pt-4 pt-md-0">
-        <img alt="image" class="img-fluid" src="/images/{{ .Params.serviceImage }}">
-      </div>
-      <div class="col-12 col-md-6 col-xl-6">
-        <h1>{{.Title}}</h1>
-        <p class="text-h3">{{ .Params.serviceDescription }}</p>
+    <div class="row justify-content-center pb-xl-3">
+      <div class="col-12 col-md-8 col-xl-8">
+        <h1 class="text-center text-white p-5">{{.Title}}</h1>
+        {{/* <p class="text-h3">{{ .Params.serviceDescription }}</p> */}}
       </div>
     </div>
   </div>
+  </section>
 
+  <section class="fdb-block mt-3">
   <div class="container pt-5">
     <div class="row justify-content-center">
       <div class="col-12 text-center my-5">
@@ -32,10 +31,10 @@
             {{.}}
             {{end}}
 
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"> 13º Salário</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
+          <ul>
+            <li> 13º Salário</li>
+            <li>Dapibus ac facilisis in</li>
+            <li>Vestibulum at eros</li>
           </ul>
         </div>
       </div>
